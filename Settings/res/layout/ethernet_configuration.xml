@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="?android:attr/scrollbarSize"
+        android:paddingStart="?android:attr/scrollbarSize" >
+
+    <TextView
+        android:id="@+id/configuration_proxy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ethernet_proxy"
+        android:padding="8dip"/>
+    <Spinner
+        android:id="@+id/configuration_proxy_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ethernet_proxy_sprinner"
+        android:padding="8dip" />
+    </LinearLayout>>
+    <include
+        layout="@layout/ethernet_proxy_manual"
+        android:id="@+id/proxy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="?android:attr/scrollbarSize"
+        android:paddingStart="?android:attr/scrollbarSize" >
+    <TextView
+        android:id="@+id/configuration_ip_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ipconfig_settings" 
+        android:padding="8dip"/>
+    <Spinner
+        android:id="@+id/configuration_ip_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ethernet_ip_sprinner"
+        android:padding="8dip" />
+    </LinearLayout>
+    <include
+        layout="@layout/ethernet_ip_static"
+        android:id="@+id/ip_settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>>
+
+</ScrollView>

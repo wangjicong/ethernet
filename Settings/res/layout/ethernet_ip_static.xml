@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="?android:attr/scrollbarSize"
+    android:paddingStart="?android:attr/scrollbarSize" >
+
+    <TextView
+        android:id="@+id/ip_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ip_address_title" />
+    <EditText
+        android:id="@+id/ip_address_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address_ip_hint"
+        android:inputType="number"
+        android:digits="0123456789."
+	android:maxLength="15"/>
+    <TextView
+        android:id="@+id/ip_gateway_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gateway_title" />
+    <EditText
+        android:id="@+id/ip_gateway_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789."
+        android:hint="@string/gateway_ip_hint"
+	android:maxLength="15"/>
+    <TextView
+        android:id="@+id/ip_prefix_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/network_prefix_length_title" />
+    <EditText
+        android:id="@+id/ip_prefix_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/prefix_ip_hint"
+	android:digits="0123456789."
+	android:maxLength="15"/>
+    <TextView
+        android:id="@+id/ip_dns1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dns1_title" />
+    <EditText
+        android:id="@+id/ip_dns1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dns1_hint"
+        android:inputType="number"
+        android:digits="0123456789."
+	android:maxLength="15"/>
+    <TextView
+        android:id="@+id/ip_dns2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dns2_title" />
+    <EditText
+        android:id="@+id/ip_dns2_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dns2_hint"
+        android:inputType="number"
+        android:digits="0123456789."
+	android:maxLength="15"/>
+
+</LinearLayout>

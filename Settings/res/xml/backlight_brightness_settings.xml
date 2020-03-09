@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- /*
+ * Added by yangfeiya for JIRA 177
+ */
+
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/backlight_brightness_title"
+    android:key="backlight_brightness_title">
+
+    <com.android.settings.widget.SeekBarPreference
+        android:key="backlight_brightness_level"
+        android:title="@string/backlight_brightness_title"
+        settings:controller="com.android.settings.display.BacklightBrightnessLevelPreferenceController" />
+
+
+
+</PreferenceScreen>

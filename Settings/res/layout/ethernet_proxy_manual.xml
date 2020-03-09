@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="?android:attr/scrollbarSize"
+    android:paddingStart="?android:attr/scrollbarSize" >
+
+    <TextView
+        android:id="@+id/proxy_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ethernet_proxy_manual_message"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/proxy_hostname_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hostname_proxy"/>
+    <EditText
+        android:id="@+id/proxy_hostname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hostname_proxy_hint"
+	android:singleLine="true" />
+    <TextView
+        android:id="@+id/proxy_port_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/port_proxy" />
+    <EditText
+        android:id="@+id/proxy_port_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/port_proxy_hint"
+        android:singleLine="true"
+	android:maxLength="4"/>
+    <TextView
+        android:id="@+id/proxy_bypass_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bypass_proxy"
+        />
+    <EditText
+        android:id="@+id/proxy_bypass_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bypass_proxy_hint"
+	android:singleLine="true" />
+
+</LinearLayout>

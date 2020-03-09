@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/ethernet_settings">
+    <PreferenceCategory
+        android:title="@string/ethernet_configuration">
+        <Preference
+            android:key="toggle_ethernet_configuration"
+            android:title="@string/ethernet_configuration_title"
+            android:summary="@string/ethernet_configuration_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.ethernet.EthernetConfigDialog"/>
+        </Preference>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/ipconfig_settings">
+        <Preference
+            android:key="toggle_ip_type"
+            android:title="@string/ip_type_title"
+            android:summary="@string/ip_type_summary"
+            android:enabled="false"
+            android:shouldDisableView="true"/>
+        <Preference
+            android:key="toggle_ip_address"
+            android:title="@string/ip_address_title"
+            android:summary="@string/ethernet_configuration_notset"
+            android:enabled="false"
+            android:shouldDisableView="true"/>
+        <Preference
+            android:key="toggle_gateway"
+            android:title="@string/gateway_title"
+            android:summary="@string/ethernet_configuration_notset"
+            android:enabled="false"
+            android:shouldDisableView="true"/>
+        <Preference
+            android:key="toggle_network_prefix_length"
+            android:title="@string/network_prefix_length_title"
+            android:summary="@string/ethernet_configuration_notset"
+            android:enabled="false"
+            android:shouldDisableView="true"/>
+        <Preference
+            android:key="toggle_dns1"
+            android:title="@string/dns1_title"
+            android:summary="@string/ethernet_configuration_notset"
+            android:enabled="false"
+            android:shouldDisableView="true"/>
+        <Preference
+            android:key="toggle_dns2"
+            android:title="@string/dns2_title"
+            android:summary="@string/ethernet_configuration_notset"
+            android:enabled="false"
+            android:shouldDisableView="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>
